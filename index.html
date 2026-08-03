@@ -1,0 +1,491 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NexTrade | Premium Global Trading Platform</title>
+    <meta name="description" content="Trade Forex, Crypto, Stocks, and Commodities on the world's most advanced trading platform.">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Preloader -->
+    <div id="preloader">
+        <div class="loader"></div>
+    </div>
+
+    <!-- Header -->
+    <header id="header">
+        <div class="container header-container">
+            <a href="#" class="logo">
+                <i class="fa-solid fa-chart-line"></i> Nex<span>Trade</span>
+            </a>
+            
+            <nav class="navbar">
+                <ul class="nav-links">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#live-market">Markets</a></li>
+                    <li><a href="#investment-plans">Plans</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#faq">FAQ</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+
+            <div class="auth-buttons">
+                <button class="btn btn-outline">Login</button>
+                <button class="btn btn-primary">Register</button>
+            </div>
+
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-bg"></div>
+        <div class="container hero-container">
+            <div class="hero-content reveal">
+                <h1>Master the Markets with <span class="gradient-text">Precision</span></h1>
+                <p>Access global markets instantly. Trade Crypto, Forex, Stocks, and Commodities with zero commissions, deep liquidity, and institutional-grade security.</p>
+                <div class="hero-cta">
+                    <button class="btn btn-primary btn-large">Start Trading Now</button>
+                    <button class="btn btn-glass btn-large">View Demo</button>
+                </div>
+                
+                <div class="stats-container">
+                    <div class="stat-box glass-card float-anim">
+                        <h3 class="counter" data-target="50">0</h3><span>B+</span>
+                        <p>24h Volume</p>
+                    </div>
+                    <div class="stat-box glass-card float-anim delay-1">
+                        <h3 class="counter" data-target="2">0</h3><span>M+</span>
+                        <p>Active Traders</p>
+                    </div>
+                    <div class="stat-box glass-card float-anim delay-2">
+                        <h3 class="counter" data-target="99">0</h3><span>.9%</span>
+                        <p>Uptime</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Live Market Widget Section -->
+    <section id="live-market" class="section">
+        <div class="container">
+            <div class="section-header reveal">
+                <h2>Live <span class="gradient-text">Markets</span></h2>
+                <p>Real-time data for Top Assets</p>
+            </div>
+            
+            <!-- Quick Tickers -->
+            <div class="ticker-tape glass-card reveal">
+                <div class="ticker-item"><i class="fa-solid fa-bitcoin"></i> BTC: $64,230 <span class="up">+2.4%</span></div>
+                <div class="ticker-item"><i class="fa-solid fa-euro-sign"></i> EUR/USD: 1.0845 <span class="down">-0.1%</span></div>
+                <div class="ticker-item"><i class="fa-solid fa-chart-pie"></i> AAPL: $189.20 <span class="up">+1.2%</span></div>
+                <div class="ticker-item"><i class="fa-solid fa-ring"></i> GOLD: $2,340 <span class="up">+0.8%</span></div>
+                <div class="ticker-item"><i class="fa-solid fa-oil-well"></i> OIL: $82.50 <span class="down">-1.5%</span></div>
+            </div>
+
+            <!-- TradingView Widget -->
+            <div class="tradingview-container glass-card reveal">
+                <!-- TradingView Widget BEGIN -->
+                <div class="tradingview-widget-container" style="height:500px; width:100%">
+                    <div id="tradingview_12345" style="height:calc(100% - 32px); width:100%"></div>
+                    <script type="text/javascript" src="https://s3.tradingview.com/tv.js"></script>
+                    <script type="text/javascript">
+                    new TradingView.widget(
+                    {
+                    "autosize": true,
+                    "symbol": "BINANCE:BTCUSDT",
+                    "interval": "D",
+                    "timezone": "Etc/UTC",
+                    "theme": "dark",
+                    "style": "1",
+                    "locale": "en",
+                    "enable_publishing": false,
+                    "backgroundColor": "rgba(15, 23, 42, 0.6)",
+                    "gridColor": "rgba(255, 255, 255, 0.05)",
+                    "hide_top_toolbar": false,
+                    "hide_legend": false,
+                    "save_image": false,
+                    "container_id": "tradingview_12345"
+                    }
+                    );
+                    </script>
+                </div>
+                <!-- TradingView Widget END -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Asset Classes / Markets Section -->
+    <section class="section bg-darker">
+        <div class="container">
+            <div class="section-header reveal">
+                <h2>Trade <span class="gradient-text">Anywhere</span></h2>
+                <p>Diversify your portfolio across global asset classes</p>
+            </div>
+            
+            <div class="card-grid">
+                <div class="glass-card market-card reveal">
+                    <div class="icon-wrapper"><i class="fa-solid fa-money-bill-transfer"></i></div>
+                    <h3>Forex</h3>
+                    <p>Trade 70+ major, minor, and exotic currency pairs with ultra-low spreads.</p>
+                </div>
+                <div class="glass-card market-card reveal delay-1">
+                    <div class="icon-wrapper"><i class="fa-brands fa-bitcoin"></i></div>
+                    <h3>Cryptocurrency</h3>
+                    <p>Access top digital assets with deep liquidity and institutional security.</p>
+                </div>
+                <div class="glass-card market-card reveal delay-2">
+                    <div class="icon-wrapper"><i class="fa-solid fa-chart-column"></i></div>
+                    <h3>Stocks</h3>
+                    <p>Invest in thousands of global companies. No hidden fees or commissions.</p>
+                </div>
+                <div class="glass-card market-card reveal delay-3">
+                    <div class="icon-wrapper"><i class="fa-solid fa-gem"></i></div>
+                    <h3>Commodities</h3>
+                    <p>Hedge inflation with Gold, Silver, Oil, and Agricultural assets.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Investment Plans -->
+    <section id="investment-plans" class="section">
+        <div class="container">
+            <div class="section-header reveal">
+                <h2>Investment <span class="gradient-text">Plans</span></h2>
+                <p>Automated yielding strategies tailored to your goals.</p>
+            </div>
+
+            <div class="pricing-grid">
+                <!-- Starter -->
+                <div class="glass-card pricing-card reveal">
+                    <h3>Starter</h3>
+                    <div class="price">
+                        <h4>$500</h4>
+                        <span>Min. Investment</span>
+                    </div>
+                    <ul class="features-list">
+                        <li><i class="fa-solid fa-check"></i> 5% Expected Return</li>
+                        <li><i class="fa-solid fa-check"></i> 7 Days Duration</li>
+                        <li><i class="fa-solid fa-check"></i> Basic Market Analysis</li>
+                        <li><i class="fa-solid fa-xmark text-muted"></i> Dedicated Manager</li>
+                    </ul>
+                    <button class="btn btn-outline btn-full">Invest Now</button>
+                </div>
+
+                <!-- Silver -->
+                <div class="glass-card pricing-card reveal delay-1">
+                    <h3>Silver</h3>
+                    <div class="price">
+                        <h4>$2,500</h4>
+                        <span>Min. Investment</span>
+                    </div>
+                    <ul class="features-list">
+                        <li><i class="fa-solid fa-check"></i> 12% Expected Return</li>
+                        <li><i class="fa-solid fa-check"></i> 14 Days Duration</li>
+                        <li><i class="fa-solid fa-check"></i> Advanced Analysis</li>
+                        <li><i class="fa-solid fa-check"></i> 24/7 Support</li>
+                    </ul>
+                    <button class="btn btn-primary btn-full">Invest Now</button>
+                </div>
+
+                <!-- Gold -->
+                <div class="glass-card pricing-card featured reveal delay-2">
+                    <div class="badge">Most Popular</div>
+                    <h3>Gold</h3>
+                    <div class="price">
+                        <h4>$10,000</h4>
+                        <span>Min. Investment</span>
+                    </div>
+                    <ul class="features-list">
+                        <li><i class="fa-solid fa-check"></i> 25% Expected Return</li>
+                        <li><i class="fa-solid fa-check"></i> 30 Days Duration</li>
+                        <li><i class="fa-solid fa-check"></i> Premium Signals</li>
+                        <li><i class="fa-solid fa-check"></i> Dedicated Manager</li>
+                    </ul>
+                    <button class="btn btn-primary btn-full">Invest Now</button>
+                </div>
+
+                <!-- VIP -->
+                <div class="glass-card pricing-card reveal delay-3">
+                    <h3>VIP</h3>
+                    <div class="price">
+                        <h4>$50,000</h4>
+                        <span>Min. Investment</span>
+                    </div>
+                    <ul class="features-list">
+                        <li><i class="fa-solid fa-check"></i> 45% Expected Return</li>
+                        <li><i class="fa-solid fa-check"></i> 60 Days Duration</li>
+                        <li><i class="fa-solid fa-check"></i> Institutional Tools</li>
+                        <li><i class="fa-solid fa-check"></i> Private Events Access</li>
+                    </ul>
+                    <button class="btn btn-outline btn-full">Invest Now</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Choose Us -->
+    <section class="section bg-darker">
+        <div class="container">
+            <div class="section-header reveal">
+                <h2>Why Choose <span class="gradient-text">NexTrade</span></h2>
+                <p>The ultimate infrastructure for serious traders.</p>
+            </div>
+
+            <div class="features-grid">
+                <div class="feature-item reveal">
+                    <i class="fa-solid fa-shield-halved gradient-text"></i>
+                    <h4>Secure Trading</h4>
+                    <p>Bank-grade encryption and cold storage solutions keep your funds safe.</p>
+                </div>
+                <div class="feature-item reveal">
+                    <i class="fa-solid fa-bolt gradient-text"></i>
+                    <h4>Fast Withdrawals</h4>
+                    <p>Instant automated processing for all your deposits and withdrawals.</p>
+                </div>
+                <div class="feature-item reveal">
+                    <i class="fa-solid fa-users-gear gradient-text"></i>
+                    <h4>Expert Team</h4>
+                    <p>Managed by veterans from Wall Street and Silicon Valley.</p>
+                </div>
+                <div class="feature-item reveal">
+                    <i class="fa-solid fa-headset gradient-text"></i>
+                    <h4>24/7 Support</h4>
+                    <p>Multilingual customer success team available round the clock.</p>
+                </div>
+                <div class="feature-item reveal">
+                    <i class="fa-solid fa-percent gradient-text"></i>
+                    <h4>Low Fees</h4>
+                    <p>Industry-leading low spreads and transparent fee structure.</p>
+                </div>
+                <div class="feature-item reveal">
+                    <i class="fa-solid fa-rocket gradient-text"></i>
+                    <h4>High Performance</h4>
+                    <p>Ultra-fast execution matching engine processing millions of TPS.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Us -->
+    <section id="about" class="section">
+        <div class="container">
+            <div class="about-flex">
+                <div class="about-image reveal">
+                    <img src="https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?auto=format&fit=crop&q=80&w=800" alt="Trading Office" loading="lazy" class="glass-img">
+                </div>
+                <div class="about-content reveal delay-1">
+                    <h2>Empowering the Next Generation of <span class="gradient-text">Investors</span></h2>
+                    <p>Founded in 2018, NexTrade has quickly grown into a globally recognized broker. We bridge the gap between traditional finance and decentralized markets.</p>
+                    <p>Our mission is to democratize finance by providing institutional-grade tools to retail traders worldwide. We believe in transparency, security, and relentless innovation.</p>
+                    <ul class="about-list">
+                        <li><i class="fa-solid fa-check-double"></i> Regulated in multiple jurisdictions</li>
+                        <li><i class="fa-solid fa-check-double"></i> Award-winning trading platform</li>
+                        <li><i class="fa-solid fa-check-double"></i> Zero compromise on security</li>
+                    </ul>
+                    <button class="btn btn-primary mt-3">Learn More</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section id="faq" class="section bg-darker">
+        <div class="container">
+            <div class="section-header reveal">
+                <h2>Frequently Asked <span class="gradient-text">Questions</span></h2>
+            </div>
+            
+            <div class="faq-container reveal">
+                <div class="faq-item glass-card">
+                    <div class="faq-header">
+                        <h4>How do I start trading?</h4>
+                        <i class="fa-solid fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-content">
+                        <p>Simply register an account, complete your KYC verification, deposit funds via fiat or crypto, and access our trading terminal to open your first position.</p>
+                    </div>
+                </div>
+                <div class="faq-item glass-card">
+                    <div class="faq-header">
+                        <h4>What is the minimum deposit?</h4>
+                        <i class="fa-solid fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-content">
+                        <p>The minimum deposit to start trading is $100. However, specific investment plans like the Starter plan require a $500 minimum.</p>
+                    </div>
+                </div>
+                <div class="faq-item glass-card">
+                    <div class="faq-header">
+                        <h4>Are my funds secure?</h4>
+                        <i class="fa-solid fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-content">
+                        <p>Yes. 95% of digital assets are stored in offline cold wallets. Fiat currencies are kept in segregated tier-1 bank accounts.</p>
+                    </div>
+                </div>
+                <div class="faq-item glass-card">
+                    <div class="faq-header">
+                        <h4>How fast are withdrawals processed?</h4>
+                        <i class="fa-solid fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-content">
+                        <p>Crypto withdrawals are typically processed within 5-10 minutes. Fiat bank transfers may take 1-3 business days depending on your bank.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter -->
+    <section class="section newsletter-section">
+        <div class="container">
+            <div class="glass-card newsletter-card reveal">
+                <h2>Stay Ahead of the <span class="gradient-text">Market</span></h2>
+                <p>Subscribe to our weekly newsletter for exclusive market insights, trading signals, and platform updates.</p>
+                <form id="newsletter-form" class="newsletter-form">
+                    <input type="email" placeholder="Enter your email address" required>
+                    <button type="submit" class="btn btn-primary">Subscribe</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section">
+        <div class="container">
+            <div class="section-header reveal">
+                <h2>Get in <span class="gradient-text">Touch</span></h2>
+                <p>Our support team is ready to assist you 24/7.</p>
+            </div>
+
+            <div class="contact-grid">
+                <div class="contact-info reveal">
+                    <div class="contact-card glass-card">
+                        <i class="fa-solid fa-location-dot"></i>
+                        <h4>Our Headquarters</h4>
+                        <p>123 Financial District, New York, NY 10004, USA</p>
+                    </div>
+                    <div class="contact-card glass-card mt-3">
+                        <i class="fa-solid fa-envelope"></i>
+                        <h4>Email Us</h4>
+                        <p>support@nextrade.com<br>partners@nextrade.com</p>
+                    </div>
+                    <div class="contact-card glass-card mt-3">
+                        <i class="fa-solid fa-phone"></i>
+                        <h4>Call Us</h4>
+                        <p>+1 (800) 123-4567<br>+44 20 7123 4567</p>
+                    </div>
+                </div>
+
+                <div class="contact-form-container glass-card reveal delay-1">
+                    <form id="contact-form">
+                        <div class="form-group">
+                            <label for="name">Full Name</label>
+                            <input type="text" id="name" required placeholder="John Doe">
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email Address</label>
+                            <input type="email" id="email" required placeholder="john@example.com">
+                        </div>
+                        <div class="form-group">
+                            <label for="phone">Phone Number</label>
+                            <input type="tel" id="phone" placeholder="+1 234 567 8900">
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea id="message" rows="5" required placeholder="How can we help you?"></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-full">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col brand-col">
+                    <a href="#" class="logo">
+                        <i class="fa-solid fa-chart-line"></i> Nex<span>Trade</span>
+                    </a>
+                    <p class="mt-3">The premium infrastructure for digital assets and traditional markets. Trade with confidence, security, and speed.</p>
+                    <div class="social-links mt-3">
+                        <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                        <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="#"><i class="fa-brands fa-discord"></i></a>
+                        <a href="#"><i class="fa-brands fa-telegram"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-col">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#live-market">Markets</a></li>
+                        <li><a href="#investment-plans">Plans</a></li>
+                        <li><a href="#about">About Us</a></li>
+                        <li><a href="#faq">FAQ</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col">
+                    <h4>Services</h4>
+                    <ul>
+                        <li><a href="#">Spot Trading</a></li>
+                        <li><a href="#">Margin Trading</a></li>
+                        <li><a href="#">Automated Bots</a></li>
+                        <li><a href="#">Wealth Management</a></li>
+                        <li><a href="#">Institutional API</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col">
+                    <h4>Legal</h4>
+                    <ul>
+                        <li><a href="#">Terms of Service</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Risk Disclosure</a></li>
+                        <li><a href="#">KYC/AML Policy</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2026 NexTrade Global Platform. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Extras: Floating Buttons & Toasts -->
+    <a href="https://wa.me/1234567890" target="_blank" class="floating-btn whatsapp-btn" aria-label="Chat on WhatsApp">
+        <i class="fa-brands fa-whatsapp"></i>
+    </a>
+    
+    <button id="back-to-top" class="floating-btn btt-btn" aria-label="Back to Top">
+        <i class="fa-solid fa-arrow-up"></i>
+    </button>
+
+    <div id="toast-container"></div>
+
+    <script src="script.js"></script>
+</body>
+</html>
